@@ -5,7 +5,7 @@ phases:
         python: 3.9
   build:
     commands:
-      - aws cloudformation package --template-file template.yaml --s3-bucket employeeappartifacts --output-template-file packaged-template.yml
+      - aws cloudformation package --template-file template.yaml --s3-bucket employeeartifactstest --output-template-file packaged-template.yml
 artifacts:
   files:
     - packaged-template.yml
